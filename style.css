@@ -15,6 +15,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-image: url('/assets/images/Main_background.jpg');
+    background-repeat: repeat; /* You can change 'repeat' to 'no-repeat' if you don't want the image to repeat */
+    background-attachment: fixed; /* This ensures the background doesn't scroll with the content */
 }
 
 /* Header styles */
@@ -23,6 +26,9 @@ header {
     color: #f8f8f2; /* Dracula theme header text */
     padding: 20px 0;
     text-align: center;
+    background-image: url('/assets/images/Main_background.jpg');
+    background-repeat: repeat; /* You can change 'repeat' to 'no-repeat' if you don't want the image to repeat */
+    background-attachment: fixed; /* This ensures the background doesn't scroll with the content */
 }
 
 .container {
@@ -89,7 +95,7 @@ em {
 
 /* Footer styles */
 footer {
-    background-color: #44475a; /* Dracula theme footer background */
+    background-color: #000000; /* Dracula theme footer background */
     color: #f8f8f2; /* Dracula theme footer text */
     text-align: center;
     padding: 20px 0;
