@@ -1,0 +1,47 @@
+{
+  "name": "armaiz-adenwala-personal-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": "13.2.0"
+  },
+  "browserslist": [">0.25%", "not dead"],
+  "dependencies": {
+    "gatsby": "^2.18.12",
+    "gatsby-plugin-manifest": "^2.2.31",
+    "gatsby-plugin-preact": "^3.1.27",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-transformer-sharp": "^2.3.7",
+    "markdown-to-jsx": "^6.11.0",
+    "node-sass": "^4.13.1",
+    "preact": "^10.3.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-lazy-load-image-component": "^1.4.1",
+    "react-syntax-highlighter": "https://github.com/ArmaizAdenwala/react-syntax-highlighter"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy:prod": "gatsby clean && gatsby build && heroku static:deploy --app armaiz-portfolio",
+    "deploy:stag": "git push stag master",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
+}

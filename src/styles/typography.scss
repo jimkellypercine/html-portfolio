@@ -1,0 +1,102 @@
+@import "./colors";
+
+.tg {
+  &__title-1 {
+    font-weight: 300;
+    font-size: 96px;
+    letter-spacing: -1.5px;
+  }
+  @include responsive-modifiers('&__title-2') {
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: -0.5px;
+  }
+  @include responsive-modifiers('&__title-3') {
+    font-weight: 300;
+    font-size: 48px;
+  }
+  @include responsive-modifiers('&__title-4') {
+    font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 0.25px;
+  }
+  @include responsive-modifiers('&__title-5') {
+    font-size: 24px;
+  }
+  @include responsive-modifiers('&__title-6') {
+    font-size: 20px;
+    letter-spacing: 0.15px;
+    line-height: 1.5;
+  }
+  @include responsive-modifiers('&__subtitle') {
+    font-size: 18px;
+    letter-spacing: 0.15px;
+  }
+  @include responsive-modifiers('&__subtitle-1') {
+    font-size: 16px;
+    letter-spacing: 0.15px;
+  }
+  @include responsive-modifiers('&__subtitle-2') {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+  }
+  @include responsive-modifiers('&__body-1') {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 8px 0;
+  }
+  @include responsive-modifiers('&__body-2') {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+  }
+  &__button {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    text-decoration: none;
+    color: $colors-secondary;
+  }
+  &__nested-link {
+    font-weight: 600;
+    color: $colors-secondary;
+    &:hover {
+      color: $colors-secondary--dark;
+    }
+  }
+  &__w--400 {
+    font-weight: 400;
+  }
+  &__w--500 {
+    font-weight: 500;
+  }
+  &__w--700 {
+    font-weight: 700;
+  }
+  @include responsive-modifiers('&__lh--1-5') {
+    line-height: 1.5;
+  }
+  @include responsive-modifiers('&__lh--1-75') {
+    line-height: 1.75;
+  }
+  &__c--primary {
+    color: $colors-primary;
+  }
+  &__c--primary--dark {
+    color: $colors-primary--dark;
+  }
+  &__c--secondary {
+    color: $colors-secondary;
+  }
+  &__ti--16 {
+    text-indent: 16px;
+  }
+  &__td--none {
+    text-decoration: none;
+  }
+  @include responsive-modifiers('&__t--left') {
+    text-align: left;
+  }
+  @include responsive-modifiers('&__t--center') {
+    text-align: center;
+  }
+}
